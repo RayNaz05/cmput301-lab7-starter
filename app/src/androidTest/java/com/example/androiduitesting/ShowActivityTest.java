@@ -22,8 +22,6 @@ import org.junit.runner.RunWith;
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class ShowActivityTest {
-
-    // ✅ launch with a valid Intent containing a city name
     @Rule
     public ActivityScenarioRule<ShowActivity> scenario =
             new ActivityScenarioRule<>(

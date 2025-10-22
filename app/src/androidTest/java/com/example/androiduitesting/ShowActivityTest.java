@@ -27,8 +27,7 @@ public class ShowActivityTest {
             new ActivityScenarioRule<>(
                     new Intent(ApplicationProvider.getApplicationContext(), ShowActivity.class)
                             .putExtra(ShowActivity.EXTRA_CITY, "Edmonton")
-            );
-
+            )
     @Test
     public void testActivitySwitch() {
         onView(withId(R.id.text_city_name)).check(matches(isDisplayed()));

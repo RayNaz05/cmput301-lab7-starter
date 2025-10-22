@@ -16,20 +16,17 @@ public class ShowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
 
-        // get the city name sent from MainActivity
         Intent intent = getIntent();
         String cityName = intent.getStringExtra(EXTRA_CITY);
 
-        // find the TextView and display the name
         TextView cityText = findViewById(R.id.text_city_name);
         cityText.setText(cityName);
 
-        // back button logic
         Button backButton = findViewById(R.id.button_back);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // closes this activity and goes back
+                finish();
             }
         });
     }
